@@ -1,0 +1,10 @@
+/Users/nihadkeric/Projects/match_dotnet-angular/DatingApp.API/bin/Debug/netcoreapp2.0/DatingApp.API.deps.json
+/Users/nihadkeric/Projects/match_dotnet-angular/DatingApp.API/bin/Debug/netcoreapp2.0/DatingApp.API.runtimeconfig.json
+/Users/nihadkeric/Projects/match_dotnet-angular/DatingApp.API/bin/Debug/netcoreapp2.0/DatingApp.API.runtimeconfig.dev.json
+/Users/nihadkeric/Projects/match_dotnet-angular/DatingApp.API/bin/Debug/netcoreapp2.0/DatingApp.API.dll
+/Users/nihadkeric/Projects/match_dotnet-angular/DatingApp.API/bin/Debug/netcoreapp2.0/DatingApp.API.pdb
+/Users/nihadkeric/Projects/match_dotnet-angular/DatingApp.API/obj/Debug/netcoreapp2.0/DatingApp.API.csproj.CoreCompileInputs.cache
+/Users/nihadkeric/Projects/match_dotnet-angular/DatingApp.API/obj/Debug/netcoreapp2.0/DatingApp.API.AssemblyInfoInputs.cache
+/Users/nihadkeric/Projects/match_dotnet-angular/DatingApp.API/obj/Debug/netcoreapp2.0/DatingApp.API.AssemblyInfo.cs
+/Users/nihadkeric/Projects/match_dotnet-angular/DatingApp.API/obj/Debug/netcoreapp2.0/DatingApp.API.dll
+/Users/nihadkeric/Projects/match_dotnet-angular/DatingApp.API/obj/Debug/netcoreapp2.0/DatingApp.API.pdb
