@@ -1,4 +1,8 @@
+# API
 DatingApp.API/bin
 DatingApp.API/obj
 DatingApp.API/.vscode
 DatingApp.API/*.db
+
+# Frontend
+
