@@ -4,15 +4,10 @@ using System.Collections.Generic;
 
 namespace DatingApp.API.Migrations
 {
-    public partial class initCreate : Migration
+    public partial class InitCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            // migrationBuilder.RenameColumn(
-            //     name: "id",
-            //     table: "Values",
-            //     newName: "Id");
-
             migrationBuilder.CreateTable(
                 name: "Users",
                 columns: table => new
@@ -27,6 +22,19 @@ namespace DatingApp.API.Migrations
                 {
                     table.PrimaryKey("PK_Users", x => x.Id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "Values",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Name = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Values", x => x.Id);
+                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -34,10 +42,8 @@ namespace DatingApp.API.Migrations
             migrationBuilder.DropTable(
                 name: "Users");
 
-            migrationBuilder.RenameColumn(
-                name: "Id",
-                table: "Values",
-                newName: "id");
+            migrationBuilder.DropTable(
+                name: "Values");
         }
     }
 }
