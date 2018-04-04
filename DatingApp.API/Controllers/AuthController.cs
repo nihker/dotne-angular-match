@@ -60,6 +60,7 @@ namespace DatingApp.API.Controllers
                     new Claim(ClaimTypes.Name, userFromRepo.Username)
 
                 }),
+                Issuer = "",
                 Expires = DateTime.Now.AddDays(1),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key),
                 SecurityAlgorithms.HmacSha256Signature)
