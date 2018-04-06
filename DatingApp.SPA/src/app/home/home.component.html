@@ -1,17 +1,17 @@
-<div class="text-center">
+<div *ngIf="!registerMode" class="text-center">
   <h1>Find you match!</h1>
   <p class="lead">Come on in to view your matches... All you need to do is sign up!</p>
   <div class="text-center">
-    <button class="btn btn-primary btn-lg" (click)="registerToggle()">Register</button>
-    <button class="btn btn-info btn-lg">Learn more</button>
+    <button class="btn btn btn-outline-primary btn-lg" (click)="registerToggle()">Register</button>
+    <button class="btn btn btn-outline-dark btn-lg">Learn more</button>
   </div>
 </div>
 
 <br>
 
 <div *ngIf="registerMode" class="container">
-    <div class="col-md-4 offset-md-4">
-      <app-register [valuesFromHome]="values"></app-register>
+    <div class="col-md-6 offset-md-3">
+      <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
     </div>
 </div>
 
