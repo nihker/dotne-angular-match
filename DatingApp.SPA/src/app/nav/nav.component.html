@@ -19,21 +19,21 @@
       </li>
     </ul>
 
-    <ul *ngIf="loggedIn()" class="navbar-nav ml-auto">
+    <ul *ngIf="loggedIn()" dropdown class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link" (click)="logout()">
           <i class="fa fa-sign-out"></i>Logout</a>
       </li>
-      <!-- <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <li class="nav-item dropdown" >
+        <a class="nav-link dropdown-toggle" dropdownToggle href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Welcome User
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu" *dropdownMenu>
           <a class="dropdown-item" href="#"><i class="fa fa-user"></i>Edit Profile</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" (click)="logout()"><i class="fa fa-sign-out"></i>Logout</a>
         </div>
-      </li> -->
+      </li>
     </ul>
 
     <form *ngIf="!loggedIn()" #loginForm="ngForm" class="form-inline mt-2 mt-md-0" (ngSubmit)="login()">
