@@ -5,10 +5,11 @@ import "rxjs/add/operator/catch";
 import "rxjs/add/observable/throw";
 import { Observable } from "rxjs/Observable";
 import { tokenNotExpired } from 'angular2-jwt';
+import { environment } from "../../environments/environment";
 
 @Injectable()
 export class AuthService {
-  baseUrl = "http://localhost:5000/api/auth/";
+  baseUrl = environment.apiUrl;
   userToken: any;
 
   constructor(private http: Http) {}
