@@ -1,0 +1,68 @@
+.card {
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 5px;
+}
+
+.card-img-top {
+    padding: 10px;
+}
+
+.card-img-top img {
+    width: 100%;
+}
+
+.card-img-top img {
+   transform: scale(1,1);
+   transition-duration: 500ms;
+   transition-timing-function: ease-out;
+}
+
+.card:hover .card-img-top img {
+    transform: scale(1.1,1.1);
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+    opacity: 0.7;
+}
+
+.card-img-top {
+    overflow: hidden;
+    position: relative;
+}
+
+h5 {
+    font-size: 16px;
+    margin-top: 4px;
+    margin-bottom: 1px;
+}
+
+h5 small {
+    font-weight: bold;
+    font-size: 12px;
+    color: gray;
+}
+
+.members-button {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 0;
+}
+
+.card:hover .members-button {
+    bottom: 34%;
+    opacity: 1;
+}
+
+.animate {
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+

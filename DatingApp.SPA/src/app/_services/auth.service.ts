@@ -9,7 +9,7 @@ import { environment } from "../../environments/environment";
 
 @Injectable()
 export class AuthService {
-  baseUrl = environment.apiUrl;
+  baseUrl = environment.apiUrl + 'auth/';
   userToken: any;
 
   constructor(private http: Http) {}
