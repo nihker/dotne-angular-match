@@ -20,6 +20,12 @@ export class UserService {
       .catch(this.handleError);
   }
 
+  getUser(id): Observable<User>{
+    return this.http.get(this.baseUrl + 'users/' +id, this.jwt())
+      .map(response => <User> response.json())
+      .catch(this.handleError);
+  }
+
   private jwt(){
     let token = localStorage.getItem('token');
     if(token){
