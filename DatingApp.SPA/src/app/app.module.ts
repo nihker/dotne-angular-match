@@ -1,3 +1,4 @@
+import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { MemberEditResolver } from './_resolvers/member-edit.resolver';
 import { MemberDetailResolver } from './_resolvers/member-detail.resolver';
 import { UserService } from './_services/user.service';
@@ -51,6 +52,7 @@ import { MemberEditComponent } from './members/member-edit/member-edit.component
     AuthService, 
     AlertifyService,
     AuthGuard,
+    PreventUnsavedChanges,
     UserService,
     MemberDetailResolver,
     MemberListResolver,
